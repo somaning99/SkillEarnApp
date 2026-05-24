@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": "m9pzdk92x",
+      "name": "somaning",
+      "email": "somaning58belagavakar@gmail.com",
+      "password": "$2b$10$9Tr5a3uFOAJipRfc4lQZ3O.YeZbJt1lvj35yvbY1YfDeJL/TAm9va",
+      "role": "student",
+      "skills": [],
+      "bio": "Programming LanguagesPythonJavaScriptTypeScriptJavaSQLRustGo (Golang)C#KotlinWeb & App DevelopmentReactNext.jsNode.jsAngularVue.jsHTML5/CSS3SwiftFlutterWordPressCloud & DevOpsAWS (Amazon Web Services)AzureGoogle Cloud Platform (GCP)DockerKubernetesTerraformAnsibleCI/CD PipelinesServerless ArchitectureAI & DataGenerative AIMachine LearningPrompt EngineeringData AnalysisPandas (Python library)TensorFlowPyTorchTableauPower BIBig Data TechnologiesCybersecurity & SecurityEthical HackingCloud SecurityNetwork SecurityData EncryptionMalware AnalysisIdentity & Access Management (IAM)Tools & MethodologiesGit / GitHubJiraAgile MethodologyScrumREST APIsMicroservices ArchitectureSystems AnalysisTroubleshootingTechnical Documentation",
+      "ratings": []
+    },
+    {
+      "id": "s2rfdhpac",
+      "name": "mateen",
+      "email": "mateen@gmail.com",
+      "password": "$2b$10$dfl.80mt9efMYpKaNqP4heTD.srqwMOpQaukI5hikpiUm5lz8bSVS",
+      "role": "client",
+      "skills": [],
+      "bio": "",
+      "ratings": []
+    },
+    {
+      "id": "cetzkiykk",
+      "name": "mdmateen",
+      "email": "mdmateen@gmail.com",
+      "password": "$2b$10$ISQZ2RVXO2ZP5CAUUhoneOzMDUGpUQXUBCqRgQQ4d3fa0al8QhJeK",
+      "role": "student",
+      "skills": [],
+      "bio": "",
+      "ratings": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "oovbw0h2y",
+      "title": "Mobile App Development",
+      "description": "Build a cross-platform mobile app for health tracking. Experience with React Native or Flutter required.\n\n",
+      "budget": "3000",
+      "requiredSkills": [
+        "React Native",
+        "Firebase",
+        "Mobile"
+      ],
+      "clientId": "s2rfdhpac",
+      "status": "running",
+      "createdAt": "2026-05-07T09:49:13.615Z"
+    },
+    {
+      "id": "wi78ttcr3",
+      "title": "Mobile App Development",
+      "description": "Build a cross-platform mobile app for health tracking. Experience with React Native or Flutter required.\n\n",
+      "budget": "3000",
+      "requiredSkills": [
+        "React Native",
+        "Firebase",
+        "Mobile"
+      ],
+      "clientId": "s2rfdhpac",
+      "status": "open",
+      "createdAt": "2026-05-07T09:49:13.709Z"
+    },
+    {
+      "id": "psfi2hwie",
+      "title": "website development",
+      "description": "school management",
+      "budget": "5000",
+      "requiredSkills": [
+        "Html",
+        "CSS",
+        "python",
+        "dbms"
+      ],
+      "clientId": "s2rfdhpac",
+      "status": "open",
+      "createdAt": "2026-05-07T10:47:39.082Z"
+    },
+    {
+      "id": "ehxrfrdy9",
+      "title": "website development",
+      "description": "school management",
+      "budget": "5000",
+      "requiredSkills": [
+        "Html",
+        "CSS",
+        "python",
+        "dbms"
+      ],
+      "clientId": "s2rfdhpac",
+      "status": "running",
+      "createdAt": "2026-05-07T10:47:39.494Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "ejcl8to1e",
+      "projectId": "oovbw0h2y",
+      "studentId": "m9pzdk92x",
+      "proposal": "i can do it very professionally if you are interested let me know.",
+      "status": "accepted",
+      "createdAt": "2026-05-07T10:09:21.270Z"
+    },
+    {
+      "id": "ni2gm5lum",
+      "projectId": "ehxrfrdy9",
+      "studentId": "cetzkiykk",
+      "proposal": "lets do it, i can develop project very effiecient and portably.",
+      "status": "accepted",
+      "createdAt": "2026-05-07T10:50:02.828Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "uy7br4muv",
+      "senderId": "m9pzdk92x",
+      "receiverId": "client3",
+      "message": "tell me the what are your requirements on this project.",
+      "timestamp": "2026-05-07T10:11:32.313Z"
+    },
+    {
+      "id": "bglrhojah",
+      "senderId": "m9pzdk92x",
+      "receiverId": "m9pzdk92x",
+      "message": "hi",
+      "timestamp": "2026-05-07T10:17:22.734Z"
+    },
+    {
+      "id": "uks70vvbs",
+      "senderId": "m9pzdk92x",
+      "receiverId": "s2rfdhpac",
+      "message": "hii",
+      "timestamp": "2026-05-07T10:22:15.905Z"
+    },
+    {
+      "id": "k61ukfvo2",
+      "senderId": "s2rfdhpac",
+      "receiverId": "s2rfdhpac",
+      "message": "hello",
+      "timestamp": "2026-05-07T10:22:30.492Z"
+    },
+    {
+      "id": "u00g8ra07",
+      "senderId": "s2rfdhpac",
+      "receiverId": "s2rfdhpac",
+      "message": "hii",
+      "timestamp": "2026-05-07T10:26:06.374Z"
+    },
+    {
+      "id": "f1x63wyxt",
+      "senderId": "m9pzdk92x",
+      "receiverId": "s2rfdhpac",
+      "message": "hello",
+      "timestamp": "2026-05-07T10:26:19.446Z"
+    },
+    {
+      "id": "5pbo1nhrj",
+      "senderId": "s2rfdhpac",
+      "receiverId": "s2rfdhpac",
+      "message": "hi",
+      "timestamp": "2026-05-07T10:26:39.941Z"
+    },
+    {
+      "id": "ekoqhbde1",
+      "senderId": "cetzkiykk",
+      "receiverId": "s2rfdhpac",
+      "message": "hii",
+      "timestamp": "2026-05-07T10:52:08.702Z"
+    }
+  ]
+}

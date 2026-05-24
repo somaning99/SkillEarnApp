@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile for students and clients",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["student", "client", "admin"] },
+        "skills": { "type": "array", "items": { "type": "string" } },
+        "bio": { "type": "string" },
+        "ratings": { "type": "array", "items": { "type": "number" } },
+        "portfolio": { "type": "array", "items": { "type": "object" } },
+        "githubUrl": { "type": "string" },
+        "linkedInUrl": { "type": "string" },
+        "companyEmail": { "type": "string" },
+        "verificationStatus": { "type": "string", "enum": ["none", "pending", "verified"] },
+        "isVerified": { "type": "boolean" },
+        "reportsReceived": { "type": "number" },
+        "isBanned": { "type": "boolean" },
+        "trustScore": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "name", "email", "role"]
+    },
+    "Project": {
+      "title": "Project",
+      "description": "Freelance projects posted by clients",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "budget": { "type": "string" },
+        "requiredSkills": { "type": "array", "items": { "type": "string" } },
+        "clientId": { "type": "string" },
+        "status": { "type": "string", "enum": ["open", "running", "completed"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "winnerId": { "type": "string" }
+      },
+      "required": ["id", "title", "clientId", "status"]
+    },
+    "Application": {
+      "title": "Application",
+      "description": "Student applications for projects",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "projectId": { "type": "string" },
+        "studentId": { "type": "string" },
+        "proposal": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "accepted", "rejected"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "projectId", "studentId", "status"]
+    },
+    "Message": {
+      "title": "Message",
+      "description": "One-to-one messages between users",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "senderId": { "type": "string" },
+        "receiverId": { "type": "string" },
+        "message": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "senderId", "receiverId", "message", "timestamp"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "Collection of all student and client user profiles"
+    },
+    "projects": {
+      "schema": "Project",
+      "description": "Collection of all projects"
+    },
+    "applications": {
+      "schema": "Application",
+      "description": "Collection of all project applications"
+    },
+    "messages": {
+      "schema": "Message",
+      "description": "Collection of all chat messages"
+    }
+  }
+}
